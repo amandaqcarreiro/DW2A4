@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--A não utilização do ponto-e-vírgula não impacta na saída do programa, 
+    mas caso seja necessário uma análise posteriormente para encontrar erros esse caso pode dificultar-->
+<script>
+    var cor = 'Azul'
+    function chamarCor() {
+        return 'cor'
+    }
+
+    chamarCor();
+    console.log(cor);
+</script>
+
+<!--O uso do ponto-e-vírgula é recomendado para facilitar o encontro de problemas posteriormente-->
+<script>
+    var cor = 'Azul';
+    function chamarCor() {
+        return 'cor';
+    }
+</script>
+
+<body>
+    <p>Olá!</p>
+</body>
+</html>
+
+<!--https://code.tutsplus.com/pt/tutorials/24-javascript-best-practices-for-beginners--net-5399-->

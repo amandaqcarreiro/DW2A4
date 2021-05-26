@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js.js"></script>
+</head>
+
+<!--JS não está no final da página e isso faz com que demore mais para a página carregar-->
+<script>
+    var times = ['SP', 'palmeiras', 'santos', 'corinthians'];
+        for(var i = 0; i < times.length; i++){ 
+                alert( times[i] );
+        }
+</script>
+
+<body>
+    <p>Olá!</p>
+</body>
+
+<!--JS no final da página, pois a página irá carregar mais rápido já que 
+    permite que o conteúdo antes dele já apareça para o usuário sem ter de esperar sua execução-->
+<script>
+    var times = ['SP', 'palmeiras', 'santos', 'corinthians'];
+        for(var i = 0; i < times.length; i++){ 
+            alert( times[i] );
+        }
+</script>
+</html>
+
+<!--https://code.tutsplus.com/pt/tutorials/24-javascript-best-practices-for-beginners--net-5399-->
