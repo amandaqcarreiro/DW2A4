@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    
+    function Pessoa() {
+        this.name = "";
+        this.endereco = "";
+        this.telefone = "";
+    }
+
+    function Fisica() {
+        Pessoa.call(this);
+        this.cpf = "";
+    }
+
+    function Juridica() {
+        Pessoa.call(this);
+        this.cnpj = "";
+    }
+
+    Fisica.prototype = Object.create(Pessoa);
+    Juridica.prototype = Object.create(Pessoa);
+
+    var teste = new Fisica();
+    teste.name = "Amanda";
+    teste.cpf = "12345678912";
+    teste.telefone = "40028922";
+
+    console.log(teste.name);
+    console.log(teste.cpf);
+    console.log(teste.telefone);
+    
+
+</script>
+
+<body>
+    <p>Iniciando exercicio...</p>
+</body>
+</html>
