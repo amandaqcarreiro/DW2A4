@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>ECMAScript 5 - Resumo</h1>
+
+        <p>ECMAScript é uma linguagem de script padronizada pela Ecma International e é a especificação principal 
+        da linguagem JavaScript.</p>
+
+        <p>ECMAScript 5 foi finalizado há mais de cinco anos e é bem suportado em todos os navegadores modernos.</p>
+
+        <p>ECMAScript 5 é totalmente compatível com o Internet Explorer 10 e quase totalmente compatível com o IE9. 
+        As versões modernas do Chrome e do Firefox também oferecem suporte total ao ECMAScript 5.</p>
+        
+        <p>Underscore.js é uma biblioteca JavaScript popular que contém “uma grande quantidade de auxiliares de 
+        programação funcional”. A maioria desses helpers trabalha em arrays e outros objetos enumeráveis ​​(coleções, 
+        como o Underscore as chama).</p>
+
+        <p>A especificação ECMAScript 5 inclui alguns desses auxiliares de programação funcional como métodos em objetos 
+        Array nativos do JavaScript.</p>
+
+        <p>indexOfe lastIndexOf, como _.indexOfe _.lastIndexOf, retorna o índice (ou último índice) no qual um valor pode ser encontrado na matriz</p>
+
+        <p>every, como _.every, retorna verdadeiro se todos os valores na matriz passarem no teste implementado pela função fornecida</p>
+            
+        <p>some, como _.some, retorna verdadeiro se algum dos valores na matriz passar no teste implementado pela função fornecida</p>
+            
+        <p>forEach, como _.each, executa uma função fornecida uma vez para cada item da matriz</p>
+            
+        <p>map, como _.map, retorna uma nova matriz com os resultados da chamada de uma função fornecida em cada item da matriz</p>
+            
+        <p>filter, como _.filter, retorna uma nova matriz com todos os itens da matriz que passam na função de teste fornecida incluídos.</p>
+            
+        <p>reducee reduceRight, como _.reducee _.reduceRight, reduza uma lista de valores em um único valor usando uma função de acumulador (da esquerda para a direita ou da direita para a esquerda)</p>
+
+        <p>Aqui estão uma variedade de outros recursos que foram adicionados ao ECMAScript 5, além das funções auxiliares de matriz:</p>
+
+        <p>Object.keys, como _.keys, retorna uma matriz de propriedades enumeráveis ​​de um determinado objeto</p>
+
+        <p>Array.isArray, como _.isArray, retorna truese um determinado objeto é uma matriz</p>
+            
+        <p>Date.now, como _.nowretorna o número de milissegundos decorridos desde 1º de janeiro de 1970 00:00:00 UTC</p>
+            
+        <p>JSON.stringifyconverte objetos JavaScript em strings JSON e JSON.parseconverte strings JSON em objetos JavaScript.</p>
+            
+        <p>Function.prototype.bind, como _.bind, retorna uma função que, quando chamada, tem seu thisargumento de palavra-chave definido para o valor fornecido</p>
+            
+        <p>String.prototype.trim, retorna uma cópia da string com os espaços em branco removidos do início e do final da string</p>
+            
+        <p>parseIntnão trata mais strings que começam com 0valores octais</p>
+
+        <p>Strict mode, Object.create, Object.seal, Object.freeze, getters/setters, e mais também foram adicionados no ECMAScript 5</p>
+
+
+    <script>
+        
+        //Exemplo da utilizacao de reduce que foi introduzido no ECMAScript5
+        var array1 = [1, 2, 3, 4];
+        var reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+        console.log(array1.reduce(reducer));
+    
+        console.log(array1.reduce(reducer, 5));
+
+
+        /*Foi pensando em trazer o escopo de bloco (tão conhecido em outras linguagens) que o ECMAScript 6 
+        destinou-se a disponibilizar essa mesma flexibilidade (e uniformidade) para a linguagem.*/
+
+        //Nova forma de escrever esse codigo utilizando let do ECMAScript 6
+
+        let array2 = [5, 6, 7, 8];
+        let reducer2 = (accumulator, currentValue) => accumulator + currentValue;
+        
+        console.log(array2.reduce(reducer2));
+
+        console.log(array2.reduce(reducer2, 5));
+
+    </script>
+
+</body>
+</html>
